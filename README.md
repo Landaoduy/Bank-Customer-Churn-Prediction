@@ -2,7 +2,7 @@
 
 # Bank Customer Churn Prediction
 
-*This repository holds an attempt to apply Machine Learning model Logistic Regression to Bank Account information using data from "Binary Classification with a Bank Churn" Kaggle Challenge https://www.kaggle.com/competitions/playground-series-s4e1/overview
+* This repository holds an attempt to apply Machine Learning model Logistic Regression to Bank Account information using data from "Binary Classification with a Bank Churn" Kaggle Challenge https://www.kaggle.com/competitions/playground-series-s4e1/overview
 
 ## Overview
 
