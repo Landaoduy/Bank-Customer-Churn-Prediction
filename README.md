@@ -18,13 +18,13 @@
 ### Data
 
 * Data:
-  * Type: Tabular Dataset
+  * **Type**: Tabular Dataset
     * Input: Train and Test CSV file of the bank's customer features
     * Output: The probability for the target variable 'Exited'
-  * Size:
+  * **Size**:
     * 165,034 rows and 14 columns for Train dataset
     * 110,023 rows and 13 columns for Test dataset
-  * Instances (Train, Test, Validation Split):
+  * **Instances (Train, Test, Validation Split)**:
     * Training: 78,256 customers
     * Validation: 26,086 customers
     * Testing: 26,086 customers
@@ -33,27 +33,27 @@
 #### Data Cleaning
 
 * Handle missing values for numerical columns
-  1. Numerical Columns:
+  **1. Numerical Columns**:
     * Replace NA values with median values
-  2. Categorical Columns:
+  **2. Categorical Columns**:
     * Filled missing values with mode (most frequent value)
       
 * Outlier Treatment
-   * Age: Clipped values to range [18, 100], replaced outliers with median
-   * Balance: Applied upper and lower bounds based on statistical distribution
-   * Tenure: Replaced negative values with median
+   * **Age**: Clipped values to range [18, 100], replaced outliers with median
+   * **Balance**: Applied upper and lower bounds based on statistical distribution
+   * **Tenure**: Replaced negative values with median
 
 #### Preprocessing
 
-* Separate numerical and categorical features:
+* **Separate numerical and categorical features**:
   * Categorical features: Geography, Gender
   * Numerical features: Age, Balance, Tenure, ...
     
-* Numerical features processing:
+* **Numerical features processing**:
   * Applied StandardScaler for normalization
   * Ensured all features are on the same scale
     
-* Categorical features processing:
+* **Categorical features processing**:
   * Use OneHotEncoder
   * Create binary columns for each category
 
