@@ -10,8 +10,8 @@
   * **My approach**: 
   * **Summary of the performance achieved**: Based on the ROC curves and classification reports, our models achieved the following performance on the validation set:
      * XGBoost: Best overall performance with ROC-AUC of 0.871884 and Accuracy Score of 0.879514
-     * Random Forest: Close second with ROC-AUC of 0.875680 and Accuracy Score of 0.859379
-     * Logistic Regression: Baseline model with reasonable performance with ROC-AUC of 0.859043 and Accuracy Score of 0.784249
+     * Random Forest: Close second with ROC-AUC of 0.859379 and Accuracy Score of 0.875680
+     * Logistic Regression: Baseline model with reasonable performance with ROC-AUC of 0.784249 and Accuracy Score of 0.859043
 
 ## Summary of Workdone
 
@@ -48,12 +48,14 @@
 * Separate numerical and categorical features:
   * Categorical features: Geography, Gender
   * Numerical features: Age, Balance, Tenure, ...
-* Scale features:
-  * Import both StandardScaler and MinMaxScaler from Sci-kit learn library. However, I choose StandardScaler as my scaling strategy
-* Encode categorical features:
-  * Applied OneHotEncoder to convert categorical features into a binary format 
-  * Value of 1 indicates the presence of that category, and 0 indicates its absence
-
+    
+* Numerical features processing:
+  * Applied StandardScaler for normalization
+  * Ensured all features are on the same scale
+    
+* Categorical features processing:
+  * Use OneHotEncoder
+  * Create binary columns for each category
 
 
 #### Data Visualization
