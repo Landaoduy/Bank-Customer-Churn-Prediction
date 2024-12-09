@@ -33,9 +33,9 @@
 #### Data Cleaning
 
 * Handle missing values for numerical columns
-  **1. Numerical Columns**:
+  * **Numerical Columns**:
     * Replace NA values with median values
-  **2. Categorical Columns**:
+  * **Categorical Columns**:
     * Filled missing values with mode (most frequent value)
       
 * Outlier Treatment
