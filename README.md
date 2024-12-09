@@ -50,11 +50,11 @@
   * Numerical features: Age, Balance, Tenure, ...
     
 * **Numerical features processing**:
-  * Applied StandardScaler for normalization
+  * Applied StandardScaler(Scikit learn) for normalization
   * Ensured all features are on the same scale
     
 * **Categorical features processing**:
-  * Use OneHotEncoder
+  * Use OneHotEncoder (Scikit learn)
   * Create binary columns for each category
 
 
@@ -64,12 +64,33 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Problem Formulation
 
-* Define:
-  * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
-
+  * **Input**:
+    * Processed numerical features (8 columns)
+    * Encoded categorical features (4 columns after one-hot encoding)
+  * **Output**:
+    * 
+  * **Models**
+    * **Logistic Regression**:
+      * **Parameters**:
+        * max_iter = 500 : Maximum number of iterations to converge
+      * **Advantages**:
+        * Simple and very efficient to train
+        * Good for understanding baseline performance
+      * **Disadvantages**:
+        * Cannot capture non-linear relationships between features
+        * Assumes independence between features
+          
+    * **Random Forest**:
+      * **Parameters**:
+        * n_estimators = 100: Number of trees
+        * random_state = 42: Ensure reproducibility
+      * **Advantages**:
+        * Handles both numerical and categorical features
+        * Can handle missing values and outliers effectively
+      * **Disadvantages**:
+        * Longer prediction time compare to other models => May require more memory
+        * Can overfit if trees are too deep
+   
 ### Training
 
 * Describe the training:
