@@ -7,25 +7,45 @@
 ## Overview
 
   * **Definition of the tasks / challenge**: The task, as defined by the Kaggle challenge, is to predict whether a customer continues with their account or closes it
-  * **My approach**: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+  * **My approach**: 
+  * **Summary of the performance achieved**:
 
 ## Summary of Workdone
-
-Include only the sections that are relevant an appropriate.
 
 ### Data
 
 * Data:
-  * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Type: Tabular Dataset
+    * Input: Train and Test CSV file of the bank's customer features
+    * Output: The probability for the target variable 'Exited'
+  * Size:
+    * 165034 rows and 14 columns for Train dataset
+    * 110023 rows and 13 columns for Test dataset
+  * Instances (Train, Test, Validation Split): 99,020 bank customers for training, 33,007 bank customers for testing, and 33,007 bank customers for validation
 
-#### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+#### Clean up
+
+* Handle missing values for numerical columns:
+  * Fill the N/A values with median value
+* Handle missing values for categorical columns:
+  * Fill the N/A values with mode
+* Handle outliers for numerical columns:
+  * Replace the outliers with median value for each numerical features like Age, Credit scores, Number of products, ...
+* Drop unnecessary columns
+
+#### Preprocessing
+
+* Separate numerical and categorical features:
+  * Categorical features: Geography, Gender
+  * Numerical features: Age, Balance, Tenure, ...
+* Scale features:
+  * Import both StandardScaler and MinMaxScaler from Sci-kit learn library. However, I choose StandardScaler as my scaling strategy
+* Encode categorical features:
+  * Applied OneHotEncoder to convert categorical features into a binary format 
+  * Value of 1 indicates the presence of that category, and 0 indicates its absence
+
+
 
 #### Data Visualization
 
