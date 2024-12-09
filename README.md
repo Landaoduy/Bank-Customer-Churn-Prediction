@@ -21,7 +21,7 @@
   * Size:
     * 165034 rows and 14 columns for Train dataset
     * 110023 rows and 13 columns for Test dataset
-  * Instances (Train, Test, Validation Split): 99,020 bank customers for training, 33,007 bank customers for testing, and 33,007 bank customers for validation
+  * Instances (Train, Test, Validation Split): 78256 bank customers for training, 26086 bank customers for testing, and 26086 bank customers for validation
 
 
 #### Clean up
