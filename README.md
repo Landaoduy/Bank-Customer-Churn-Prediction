@@ -2,13 +2,16 @@
 
 # Bank Customer Churn Prediction
 
-* This repository holds an attempt to apply Machine Learning model to Bank Customer Account Information using data from "Binary Classification with a Bank Churn" Kaggle Challenge https://www.kaggle.com/competitions/playground-series-s4e1/overview
+* This repository holds an attempt to apply Machine Learning model for predicting bank customer churn using data from "Binary Classification with a Bank Churn" Kaggle Challenge https://www.kaggle.com/competitions/playground-series-s4e1/overview
 
 ## Overview
 
-  * **Definition of the tasks / challenge**: The task, as defined by the Kaggle challenge, is to predict whether a customer continues with their account or closes it
+  * **Definition of the tasks / challenge**: The task, as defined by the Kaggle challenge, is to predict whether a bank customer will continue with their account or close it (churn). This binary classification problem is crucial for banks to proactively identify customers at risk of leaving and take preventive measures
   * **My approach**: 
-  * **Summary of the performance achieved**:
+  * **Summary of the performance achieved**: Based on the ROC curves and classification reports, our models achieved the following performance on the validation set:
+     * XGBoost: Best overall performance with ROC-AUC of 0.871884 and Accuracy Score of 0.879514
+     * Random Forest: Close second with ROC-AUC of 0.875680 and Accuracy Score of 0.859379
+     * Logistic Regression: Baseline model with reasonable performance with ROC-AUC of 0.859043 and Accuracy Score of 0.784249
 
 ## Summary of Workdone
 
@@ -19,20 +22,26 @@
     * Input: Train and Test CSV file of the bank's customer features
     * Output: The probability for the target variable 'Exited'
   * Size:
-    * 165034 rows and 14 columns for Train dataset
-    * 110023 rows and 13 columns for Test dataset
-  * Instances (Train, Test, Validation Split): 78256 bank customers for training, 26086 bank customers for testing, and 26086 bank customers for validation
+    * 165,034 rows and 14 columns for Train dataset
+    * 110,023 rows and 13 columns for Test dataset
+  * Instances (Train, Test, Validation Split):
+    * Training: 78,256 customers
+    * Validation: 26,086 customers
+    * Testing: 26,086 customers
 
 
-#### Clean up
+#### Data Cleaning
 
-* Handle missing values for numerical columns:
-  * Fill the N/A values with median value
-* Handle missing values for categorical columns:
-  * Fill the N/A values with mode
-* Handle outliers for numerical columns:
-  * Replace the outliers with median value for each numerical features like Age, Credit scores, Number of products, ...
-* Drop unnecessary columns
+* Handle missing values for numerical columns
+  1. Numerical Columns:
+    * Replace NA values with median values
+  2. Categorical Columns:
+    * Filled missing values with mode (most frequent value)
+      
+* Outlier Treatment
+   * Age: Clipped values to range [18, 100], replaced outliers with median
+   * Balance: Applied upper and lower bounds based on statistical distribution
+   * Tenure: Replaced negative values with median
 
 #### Preprocessing
 
