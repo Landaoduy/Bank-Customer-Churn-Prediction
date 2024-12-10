@@ -170,12 +170,14 @@ Show a few visualization of the data and say a few words about what you see.
 * **Required packages**:
   * Pandas, NumPy, Scikit-learn, XGBoost, matplotplib, seaborn
 * **Installing packages in Jupyter/Colab**:
-  * !pip install pandas
-  * !pip install numpy
-  * !pip install scikit-learn
-  * !pip install xgboost
-  * !pip install matplotlib
-  * !pip install seaborn    
+  * ```sh
+    !pip install pandas
+    !pip install numpy
+    !pip install scikit-learn
+    !pip install xgboost
+    !pip install matplotlib
+    !pip install seaborn
+    ``` 
 
 ### Data
 
