@@ -68,7 +68,7 @@ Show a few visualization of the data and say a few words about what you see.
     * Processed numerical features (8 columns)
     * Encoded categorical features (4 columns after one-hot encoding)
   * **Output**:
-    * 
+   
   * **Models**
     * **Logistic Regression**:
       * **Parameters**:
@@ -90,7 +90,18 @@ Show a few visualization of the data and say a few words about what you see.
       * **Disadvantages**:
         * Longer prediction time compare to other models => May require more memory
         * Can overfit if trees are too deep
-   
+    * **XGBoost**:
+      * **Parameters**:
+        * eval_metric = 'logloss': Uses log loss for evaluation
+        * randome_state = 42
+      * **Advantages**:
+        * Usually achieve high accuracy and performance
+        * Handles imbalance data well
+      * **Disadvantages**:
+        * Can be overfitting
+        * Can be memory-intensive, especially for large datasets.
+       
+      
 ### Training
 
 * Describe the training:
