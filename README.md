@@ -167,6 +167,7 @@ Show a few visualization of the data and say a few words about what you see.
 * Note that all of these notebooks should contain enough text for someone to understand what is happening.
 
 ### Software Setup
+
 * **Required packages**:
   * Pandas, NumPy, Scikit-learn, XGBoost, matplotplib, seaborn
 * **Installing packages in Jupyter/Colab**:
@@ -179,11 +180,24 @@ Show a few visualization of the data and say a few words about what you see.
     !pip install seaborn
     ``` 
 
-### Data
+### Dataset
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
+* **Download train.csv and test.csv dataset**:
+  * https://www.kaggle.com/competitions/playground-series-s4e1/data?select=train.csv
+* **Loading original dataset**:
+  
+  * **Upload the both datasets**:
+    ```sh
+    from google.colab import files
+    uploaded = files.upload()
+    ```
+  * **Unzip datasets**:
+    ```sh
+    !unzip train.csv.zip -d /content/data/
+    !unzip test.csv.zip -d /content/data/
+    ```
 
+    
 ### Training
 
 * Describe how to train the model
