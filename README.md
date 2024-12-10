@@ -127,12 +127,19 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
-
+* **Model Performance**:
+  * XGBoost shows best overall performance
+  * Random Forest come to second with similar metrics
+  * Logistic Regression provides good baseline
+    
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* **Model Improvements**:
+  * Implement neural networks
+  * Try more advanced ensemble methods
+* **Additional Analysis**:
+  * Time-series analysis of churn patterns
+  * Cost-benefit analysis of predictions
 
 ## How to reproduce results
 
