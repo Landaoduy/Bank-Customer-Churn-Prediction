@@ -167,9 +167,15 @@ Show a few visualization of the data and say a few words about what you see.
 * Note that all of these notebooks should contain enough text for someone to understand what is happening.
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* **Required packages**:
+  * Pandas, NumPy, Scikit-learn, XGBoost, matplotplib, seaborn
+* **Installing packages in Jupyter/Colab**:
+  * !pip install pandas
+  * !pip install numpy
+  * !pip install scikit-learn
+  * !pip install xgboost
+  * !pip install matplotlib
+  * !pip install seaborn    
 
 ### Data
 
