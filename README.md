@@ -113,9 +113,12 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+* **Key Metrics**:
+  * Accuracy Score
+  * ROC-AUC Score
+  * Classfication Report (Precision, Recall, F1-Score)
+* **Result Visualization**:
+  
 
 ### Conclusions
 
