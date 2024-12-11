@@ -8,7 +8,9 @@
 ## Overview
 
   * **Definition of the tasks / challenge**: The task, as defined by the Kaggle challenge, is to predict whether a bank customer will continue with their account or close it (churn). This binary classification problem is crucial for banks to proactively identify customers at risk of leaving and take preventive measures
+    
   * **My approach**: The approach in this repository formulates the problem as classification task, using multiple machine learning models with bank customer features as input. Performance evaluation using multiple metrics
+    
   * **Summary of the performance achieved**: Based on the ROC curves and classification reports, our models achieved the following performance on the validation set:
      * XGBoost: Best overall performance with ROC-AUC of 0.881 and Accuracy Score of 0.885
      * Random Forest: Close second with ROC-AUC of 0.869 and Accuracy Score of 0.880
