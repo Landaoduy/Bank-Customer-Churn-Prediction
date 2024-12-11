@@ -72,14 +72,15 @@
 
 
 * **Before and After Scaling Credit Score**:
-  ![Screenshot 2024-12-10 150643](https://github.com/user-attachments/assets/35f6c0dc-05aa-405d-a52e-d57e208f7235)
-  ![Screenshot 2024-12-10 150719](https://github.com/user-attachments/assets/3e7bd92c-4bfc-44f4-a7b6-7406aa623236)
+ 
   * X-axis: standard deviations (z-scores)
   * Y-axis: shows the raw count of customers
   * The distribution shows:
     * The new range is approximately from -4 to 2 standard deviations
     * Most values fall between -2 and +2 ( which is expected in normal distribution)
-    * The new distribution is centered around 0 
+    * The new distribution is centered around 0
+    ![Screenshot 2024-12-10 150643](https://github.com/user-attachments/assets/095dbde9-c02a-4b27-b6e9-95253562e494)
+    ![Screenshot 2024-12-10 150719](https://github.com/user-attachments/assets/bad1d967-12ef-41b2-91bd-e3941cf097ca)
 
 
 ### Problem Formulation
