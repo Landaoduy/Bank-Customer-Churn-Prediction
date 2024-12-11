@@ -143,7 +143,8 @@
   * ROC-AUC Score
   * Classfication Report (Precision, Recall, F1-Score)
 * **Result Visualization**:
-  * ROC curves: 
+  * ROC curves:
+    ![Screenshot 2024-12-11 011831](https://github.com/user-attachments/assets/cc931be2-577c-466d-80c4-cc80f6a89a14)
 
   * Comparison table:
     ![Screenshot 2024-12-11 011600](https://github.com/user-attachments/assets/393a10ef-4f27-4031-8aca-208459f3f733)
