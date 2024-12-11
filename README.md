@@ -10,9 +10,9 @@
   * **Definition of the tasks / challenge**: The task, as defined by the Kaggle challenge, is to predict whether a bank customer will continue with their account or close it (churn). This binary classification problem is crucial for banks to proactively identify customers at risk of leaving and take preventive measures
   * **My approach**: The approach in this repository formulates the problem as classification task, using multiple machine learning models with bank customer features as input. Performance evaluation using multiple metrics
   * **Summary of the performance achieved**: Based on the ROC curves and classification reports, our models achieved the following performance on the validation set:
-     * XGBoost: Best overall performance with ROC-AUC of 0.871884 and Accuracy Score of 0.879514
-     * Random Forest: Close second with ROC-AUC of 0.859379 and Accuracy Score of 0.875680
-     * Logistic Regression: Baseline model with reasonable performance with ROC-AUC of 0.784249 and Accuracy Score of 0.859043
+     * XGBoost: Best overall performance with ROC-AUC of 0.881 and Accuracy Score of 0.885
+     * Random Forest: Close second with ROC-AUC of 0.869 and Accuracy Score of 0.880
+     * Logistic Regression: Baseline model with reasonable performance with ROC-AUC of 0.797 and Accuracy Score of 0.859
 
 ## Summary of Workdone
 
@@ -26,9 +26,9 @@
     * 165,034 rows and 14 columns for Train dataset
     * 110,023 rows and 13 columns for Test dataset
   * **Instances (Train, Test, Validation Split)**:
-    * Training: 78,256 customers
-    * Validation: 26,086 customers
-    * Testing: 26,086 customers
+    * Training: 78,194 customers
+    * Validation: 26,065 customers
+    * Testing: 26,065 customers
 
 
 #### Data Cleaning
@@ -144,11 +144,9 @@
   * Classfication Report (Precision, Recall, F1-Score)
 * **Result Visualization**:
   * ROC curves:
-  ![Screenshot 2024-12-09 182531](https://github.com/user-attachments/assets/e4ab70de-6a54-459d-9147-d157cd4daeef)
 
   * Comparison table:
-  ![Screenshot 2024-12-09 181736](https://github.com/user-attachments/assets/532352ac-0de7-4f21-8c2a-6265ed15bc4e)
-
+ 
 
 ### Conclusions
 
