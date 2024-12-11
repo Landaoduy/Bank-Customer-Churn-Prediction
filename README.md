@@ -68,7 +68,8 @@
     * Peak concentration around 650-700
     * Very few customers have scores below 500 or above 800
     * Both zero and non-zero balance customers have similar distributions
-![Screenshot 2024-12-10 145403](https://github.com/user-attachments/assets/65d9782d-b0ad-47cc-b724-78b54a9776d5)
+![Screenshot 2024-12-10 145403](https://github.com/user-attachments/assets/542daac6-de44-4248-8455-b534c084eaae)
+
 
 * **Before and After Scaling Credit Score**:
   ![Screenshot 2024-12-10 150643](https://github.com/user-attachments/assets/35f6c0dc-05aa-405d-a52e-d57e208f7235)
