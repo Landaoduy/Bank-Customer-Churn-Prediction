@@ -131,9 +131,6 @@
 * **Hardware and Software Environment**:
   * The code runs efficiently on standard CPU hardware
   * No GPU acceleration required
-    
-* **Training Duration**:
-  * Approximately 1~2 minutes
 
 * **Training Decisions**:
   * Models were trained without extensive hyperparameter tuning
